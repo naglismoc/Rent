@@ -39,7 +39,6 @@ namespace Rent
         {
             printRentablesAvailable(rentables.Where(r => r.Floor == num).ToList());
 
-
         }
 
     }

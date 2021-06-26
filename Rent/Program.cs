@@ -65,6 +65,28 @@ namespace Rent
              * name
              * price 
              * */
+
+            if (5 > 4)
+            {
+                Console.WriteLine("daugiau");
+              
+            }
+            else
+            {
+                Console.WriteLine("nedaugiau");
+            }
+            /* try catch example
+            try {
+              int num = int.Parse(Console.ReadLine());
+                Console.WriteLine("skaicius yra "+num);
+            }
+            catch(Exception e) {
+                Console.WriteLine("išvengem katastrofos." +e);
+            }
+            */
+
+
+
             while (true)
             {
                 Console.WriteLine("");
@@ -111,7 +133,6 @@ namespace Rent
                         break;
                     case "3l":
                         Console.WriteLine("3l + "+num);
-
                         ReceptionControl.printFloorRentablesAvailable(hotel, num);
                         break;
                     case "rn":
