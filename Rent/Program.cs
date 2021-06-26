@@ -67,6 +67,7 @@ namespace Rent
              * */
             while (true)
             {
+                Console.WriteLine("");
                 Console.WriteLine("ka norite daryti? x simbolizuoja skaičių");
                 Console.WriteLine("1  - pamatyti visus kambarius");
                 Console.WriteLine("1l- pamatyti laisvus kambarius");
@@ -102,13 +103,16 @@ namespace Rent
                         ReceptionControl.printRentables(maziNamukai);
                         break;
                     case "2l":
-                        // code block
+                        ReceptionControl.printRentablesAvailable(maziNamukai);
                         break;
                     case "3":
                         Console.WriteLine("3 + " + num);
+                        ReceptionControl.printFloorRentables(hotel, num);
                         break;
                     case "3l":
                         Console.WriteLine("3l + "+num);
+
+                        ReceptionControl.printFloorRentablesAvailable(hotel, num);
                         break;
                     case "rn":
                         ReceptionControl.Reserve(maziNamukai);
