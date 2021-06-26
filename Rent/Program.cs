@@ -76,7 +76,6 @@ namespace Rent
                 Console.WriteLine("3l-x - pamatyti laisvus kambarius x aukste");
                 Console.WriteLine("rn- rezervuoti namelį");
                 Console.WriteLine("rk- rezervuoti kambarį");
-                Console.WriteLine("x- rezervuojamo objekto nr");
 
                 string input = Console.ReadLine();
                 int num = 0;
@@ -116,9 +115,6 @@ namespace Rent
                         break;
                     case "rk":
                         ReceptionControl.Reserve(hotel);
-                        break;
-                    case "x":
-                        // code block
                         break;
                     default:
                         Console.WriteLine("iveskite teisingus duomenis");
